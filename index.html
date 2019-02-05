@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/jointjs/dist/joint.min.css">
+    <link rel="stylesheet" href="assets/css/globals.css">
+</head>
+
+<body>
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+
+    <div class="container-fluid">
+        <div class="center-block">
+            <h1>Javascript Analyzer</h1>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="starter" class="col-sm-2 control-label">Starter File : </label>
+                <div class="col-sm-8">
+                    <input id="starter" class="form-control" type="text" disabled="disabled" />                
+                </div>
+                <div class="col-sm-1">
+                    <button id="starter-select" class="btn btn-default">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-block">
+            <div class="row">
+                <h1>Graph</h1>
+            </div>
+        </div>
+
+        <div class="center-block">
+            <div class="row">
+                <div id="graph"></div>
+            </div>
+        </div>
+
+    </div>
+
+   <!-- Third libraries --> 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/backbone/backbone-min.js"></script>
+    <script src="node_modules/jointjs/dist/joint.min.js"></script>
+
+    <script>
+        require("./assets/buttons.js")
+        require("./renderer-process/notifications.js")
+        require("./renderer-process/graph.js")
+    </script>
+</body>
+</html>
